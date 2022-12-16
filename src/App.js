@@ -8,10 +8,12 @@ import Edit from './components/Edit';
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route exact path="/" element={<Contacts />} />
-        <Route exact path="/edit/:id" element={<Edit />} />
-      </Routes>
+      <div id='container'>
+        <Routes>
+          <Route exact path="/" element={<Contacts />} />
+          <Route exact path="/edit/:id" element={<Edit />} />
+        </Routes>
+      </div>
     </div>
   );
 }
